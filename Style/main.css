@@ -1,0 +1,138 @@
+/* Start var */
+:root {
+    --balck-color: #191919;
+    --white-color: #eeeeee;
+    --main-color: #7014f2;
+    --sec-color: #00f59b;
+}
+
+/* End var */
+/* Start Global Rules */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Work Sans", sans-serif;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Small */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* Large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+/* End Global Rules */
+/* Start Menu */
+.menu .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu .container li{
+    display: inline;
+}
+
+.menu .container .socialMedia li{
+    margin: 0 5px;
+}
+
+.menu .container .menu_item li{
+    margin: 0 10px;
+}
+
+.menu .container a{
+    text-decoration: none;
+    color: var(--balck-color);
+    font-size: 20px;
+}
+
+.menu .container a:hover{
+    color: var(--main-color);
+}
+/* End Menu */
+/* Start About */
+.about{
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.about .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about .container .left_side{
+    width: 50%;
+    position: relative;
+    padding-bottom: 5%;
+}
+
+.about .container .left_side .best_skill{
+    width: 60%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.about .container .left_side .best_skill .icons{
+    position: relative;
+}
+
+.about .container .left_side .best_skill ul{
+    align-content: center;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    right: 0;
+    top: -20px;
+}
+
+.about .container .left_side .best_skill ul li{
+    display: inline;
+}
+
+.about .container .left_side .best_skill ul .icon {
+    width: 70px;
+}
+
+.about .container .right_side{
+    width: 50%;
+    text-align: right;
+}
+
+.about .container .right_side img{
+    width: 80%;
+}
+/* End About */
+
