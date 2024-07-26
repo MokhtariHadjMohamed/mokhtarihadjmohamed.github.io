@@ -114,7 +114,7 @@ body {
     overflow: hidden;
 }
 
-.skills .container .skills_list{
+.skills .container .skills_list {
     width: calc(350px * 17);
     animation: slide 20s ease infinite;
     display: flex;
@@ -182,6 +182,13 @@ body {
     margin-top: 30px;
 }
 
+.projects .container .projects_list .project:hover .btn {
+    width: 100%;
+    background-color: var(--sec-color);
+    color: var(--main-color);
+}
+
+
 /* End projects */
 /* Start Resume */
 .resume {
@@ -218,3 +225,96 @@ body {
 }
 
 /* End Resume */
+/* Start Contact Us */
+.contact {
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.contact .container .box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10%;
+}
+
+.contact .container .box .left_side {
+    width: 100%;
+}
+
+.contact .container .box .left_side .text_box,
+.contact .container .box .left_side textarea {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+    resize: none;
+    border: var(--balck-color) 1px solid;
+    border-radius: 10px;
+    outline: none;
+    padding: 10px;
+}
+
+.contact .container .box .left_side .text_box {
+    height: 50px;
+}
+
+.contact .container .box .left_side #massage {
+    height: 150px;
+}
+
+.contact .container .box .left_side #submit {
+    background-color: var(--main-color);
+    color: var(--white-color);
+    padding: 10px 20px;
+    text-align: center;
+    margin-top: 30px;
+    float: right;
+    outline: none;
+    border: none;
+}
+
+.contact .container .box .left_side #submit:hover {
+    width: 100%;
+    background-color: var(--sec-color);
+    color: var(--main-color);
+}
+
+.contact .container .box .right_side {
+    width: 50%;
+    text-align: right;
+}
+
+.contact .container .box .right_side img {
+    width: 150%;
+}
+
+/* End Contact Us */
+/* Start Footer */
+.footer{
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.footer .container{
+    text-align: center;
+}
+
+.footer .container ul{
+    padding: 0;
+}
+
+.footer .container ul li{
+    display: inline;
+    margin: 5px;
+}
+
+.footer .container ul li a{
+    text-decoration: none;
+    color: var(--balck-color);
+    font-size: 20px;
+}
+
+.footer .container a:hover {
+    color: var(--main-color);
+}
+/* End Footer */
